@@ -38,9 +38,29 @@ form:
         min: 10
         max: 1000
 
+    page_title:
+      type: toggle
+      label: Use page title
+      help: If enabled, will grab the title for each feed from the parent page instead of using the globals set below.
+      highlight: 0
+      default: 0
+      options:
+        1: Enabled
+        0: Disabled
+
     title:
       type: text
       label: Title
+
+    page_description:
+      type: toggle
+      label: Use page description
+      help: If enabled, will grab the description from the parent page instead of using the global set below.
+      highlight: 0
+      default: 0
+      options:
+        1: Enabled
+        0: Disabled
 
     description:
       type: textarea

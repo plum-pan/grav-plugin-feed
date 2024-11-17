@@ -9,9 +9,10 @@
 {% endfor %}
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <title>{{ collection.params.title }}</title>
+    <title>{{ config.plugins.feed.page_title ? page.title : collection.params.title }}</title>
     <link href="{{ uri.rootUrl(true)~uri.uri() }}" rel="self" />
-    <subtitle>{{ collection.params.description }}</subtitle>
+{# This is really ugly to escape the : in og:description I am sorry. Can fix with Twig 3.x #}
+    <subtitle>{{ config.plugins.feed.page_title ? (attribute(page.metadata, 'og:description').content ?: page.metadata.description.content) : collection.params.description }}</subtitle>
     <updated>{{ feed_updated|date("Y-m-d\\TH:i:sP") }}</updated>
     <author>
         <name>{{ site.author.name }}</name>
