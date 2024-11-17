@@ -4,15 +4,15 @@ I'm trying stuff out here! I don't know what I'm doing yet!
 
 The feature bloat:
 
-✅ Add option to pull feed title and info from page metadata instead of global settings in plugin
+- ✅ Add option to pull feed title and info from page metadata instead of global settings in plugin
 
 TODO:
 
-❎ Turn last-modified on by default
-❎ Find a way to add link alternate for valid feed pages
-❎ Add option to write feed to static file (dynamic feed requests eat up a LOT of resources)
-❎ Add option for paginated feeds
-❎ Remove RSS and JSON maybe (everyone should use ATOM)
+- ❎ Turn last-modified on by default
+- ❎ Find a way to add link alternate for valid feed pages
+- ❎ Add option to write feed to static file (dynamic feed requests eat up a LOT of resources)
+- ❎ Add option for paginated feeds
+- ❎ Remove RSS and JSON maybe (everyone should use ATOM)
 
 Original readme below
 
