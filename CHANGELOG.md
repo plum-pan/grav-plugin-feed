@@ -4,6 +4,8 @@
 1. [](#new)
    * Added new `onFeedCollectionProcessed()` event to modify the collection as needed.
    * Added ability to use custom `feed: template:` in YAML frontmatter configuration without a collection defined
+1. [](#new)
+   * Added config option to pull title and description from page metadata
 
 # v1.10.0
 ## 09/26/2023
